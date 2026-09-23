@@ -1,0 +1,7 @@
+node_modules
+.next
+.netlify
+artifacts
+package-lock.json
+public/images
+public/fonts

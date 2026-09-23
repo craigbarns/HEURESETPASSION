@@ -1,0 +1,35 @@
+{
+  "name": "heures-et-passion",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "validate": "node --experimental-strip-types scripts/validate-data.ts",
+    "check": "npm run validate && npm run lint && npm run typecheck",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "next": "16.3.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5",
+    "sharp": "^0.35.4",
+    "tailwindcss": "4.3.3",
+    "typescript": "^5.9"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "type": "module"
+}
