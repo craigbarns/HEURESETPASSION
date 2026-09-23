@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 import type { MetadataRoute } from "next";
 import { afterSales } from "@/data/services";
 import { siteUrl, indexable } from "@/lib/site";
