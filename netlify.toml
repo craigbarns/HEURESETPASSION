@@ -40,3 +40,6 @@
   for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
