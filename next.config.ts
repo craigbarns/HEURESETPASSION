@@ -4,7 +4,7 @@ const config: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   output: "export",
-  images: { formats: ["image/avif", "image/webp"] },
+  images: { unoptimized: true, formats: ["image/avif", "image/webp"] },
   turbopack: { root: process.cwd() },
 };
 export default config;
